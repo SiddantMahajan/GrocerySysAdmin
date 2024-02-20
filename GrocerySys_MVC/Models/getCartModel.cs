@@ -7,12 +7,10 @@ namespace GrocerySys_MVC.Models
 {
     public class getCartModel
     {
-        public int CartID { get; set; }
         public string UserName { get; set; }
         public string UserAddress { get; set; }
         public string ProductName { get; set; }
-        public int Quantity { get; set; }
-        public int Price { get; set; }
-        public int Total { get; set; }
+        public string Quantities { get; set; }
+        public int GrandTotal { get; set; }
     }
 }

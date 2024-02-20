@@ -33,13 +33,11 @@ namespace GrocerySys_DAL.Repository
                     while(SDR.Read())
                     {
                         getCartModel cart = new getCartModel();
-                        cart.CartID = Convert.ToInt32(SDR["CartID"]);
+                        cart.GrandTotal = Convert.ToInt32(SDR["GrandTotal"]);
                         cart.UserName = SDR["UserName"].ToString();
                         cart.UserAddress = SDR["UserAddress"].ToString();
-                        cart.ProductName = SDR["ProductName"].ToString();
-                        cart.Quantity = Convert.ToInt32(SDR["Quantity"]);
-                        cart.Price = Convert.ToInt32(SDR["Price"]);
-                        cart.Total = Convert.ToInt32(SDR["Total"]);
+                        cart.ProductName = SDR["ProductNames"].ToString();
+                        cart.Quantities = SDR["Quantities"].ToString();
                         cartList.Add(cart); 
                     }
                 }

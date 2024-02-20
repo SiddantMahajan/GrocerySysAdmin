@@ -204,13 +204,11 @@
                        
                         <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>User Name</th>
                                 <th>Address</th>
-                                <th>Product</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Total</th>
+                                <th>Products</th>
+                                <th>Quantities</th>
+                                <th>GrandTotal</th>
                             </tr>
                         </thead>
                     </table>
@@ -223,13 +221,11 @@
                             @foreach (var cart in ViewBag.CartList)
                             {
                                 <tr>
-                                    <td>@cart.CartID</td>
                                     <td>@cart.UserName</td>
                                     <td>@cart.UserAddress</td>
                                     <td>@cart.ProductName</td>
-                                    <td>@cart.Quantity</td>
-                                    <td>@cart.Price</td>
-                                    <td>@cart.Total</td>
+                                    <td>@cart.Quantities</td>
+                                    <td>@cart.GrandTotal</td>
                                 </tr>
                             }
                         </tbody>
